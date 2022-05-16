@@ -1,0 +1,25 @@
+<table>
+	<thead>
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>username</td>
+			<td>Email</td>
+			<td>Phone</td>
+			<td>Website</td>
+			<td>Address</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr  routerLink="/customers/{{item.id}}" *ngFor="let item of data">
+			<td >{{item.id}}</td>
+			<td>{{item.name}}</td>
+			<td>{{item.username}}</td>
+			<td>{{item.email}}</td>
+			<td>{{item.phone}}</td>
+			<td>{{item.website}}</td>
+			<td>{{item.address.street}}, {{item.address.city}}</td>
+		</tr>
+	</tbody>
+</table>
+<!--  -->

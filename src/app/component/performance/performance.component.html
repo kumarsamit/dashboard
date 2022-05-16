@@ -1,0 +1,21 @@
+<p>performance works!</p>
+
+<input [disabled]=disabledbox type="text" value="{{name}}">
+<button (click)="alert()">button</button>
+<hr>
+
+<div [ngSwitch]="color">
+    <h2 *ngSwitchCase="'red'">
+        Red Color
+    </h2>
+    <h2 *ngSwitchCase="'green'">
+        Green Color
+    </h2>
+    <h2 *ngSwitchCase="'ORange'">
+        Orange Color
+    </h2>
+    <h2 *ngSwitchCase="'Lime'">
+        Lime Color
+    </h2>
+
+</div>

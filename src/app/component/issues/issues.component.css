@@ -1,0 +1,15 @@
+td{
+    border :1px solid #fff;
+    padding: 5px;
+}
+table{
+    width: 100%;
+}
+.greenColor{
+    background: rgb(50, 148, 50);
+    color: #fff;
+}
+.redColor{
+    color: #fff;
+    background: rgb(170, 77, 77);
+}

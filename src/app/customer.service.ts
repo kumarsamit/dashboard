@@ -10,8 +10,7 @@ import { CustomerDetialsComponent } from './component/customer-detials/customer-
 
 
 export class CustomerService {
-  newURLId:string="";
- 
+
   constructor(private http:HttpClient,private router:ActivatedRoute) { }
   getData(url:any){
     // let url = "https://jsonplaceholder.typicode.com/todos/";

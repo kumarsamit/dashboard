@@ -1,5 +1,6 @@
 
 <table>
+        <img src="{{dataimg.thumbnailUrl}}" alt="">
     <tr>
 		<td>Name</td>
         <td>{{data.name}}</td>
@@ -7,6 +8,10 @@
     <tr>
 		<td>username</td>
         <td>{{data.username}}</td>
+    </tr>
+    <tr>
+        <td>Complaint Status</td>
+        <td [ngClass]="userStatus.completed == true ? 'greenColor' : 'redColor' ">{{userStatus.completed}}</td>
     </tr>
     <tr>
 		<td>Id</td>

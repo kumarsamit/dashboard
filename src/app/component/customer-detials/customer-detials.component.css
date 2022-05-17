@@ -1,7 +1,7 @@
 table{
     width: 100%;
+    position: relative;
 }td{
-    border:1px solid #fff;
     padding: 10px;
     
 }
@@ -10,4 +10,16 @@ tbody tr{
 }
 tr td:first-child{
     font-weight: 500;
+}
+
+table img{
+position: absolute;
+right:10px;
+top: 10px;
+}
+.greenColor{
+    color: rgb(0, 200, 0);
+}
+.redColor{
+    color: rgb(200, 0, 0);
 }

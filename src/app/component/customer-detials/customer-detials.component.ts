@@ -23,6 +23,8 @@ export class CustomerDetialsComponent implements OnInit {
 	newApi: string = 'https://jsonplaceholder.typicode.com/users';
 	data: any;
     name: any;
+	dataimg:any;
+	userStatus:any;
 
 	constructor( public route: ActivatedRoute , private user: CustomerService  ) {
 		var newURL = this.newApi + '/' + this.route.snapshot.params['id']
@@ -32,6 +34,14 @@ export class CustomerDetialsComponent implements OnInit {
 				this.data = data;
 				console.warn(data)
 			});
+			this.user.getData("https://jsonplaceholder.typicode.com/photos/" + this.route.snapshot.params['id'] ).subscribe((dataimg) =>{
+				this.dataimg = dataimg;
+			})
+			this.user.getData("https://jsonplaceholder.typicode.com/todos/" + this.route.snapshot.params['id'] ).subscribe((userStatus) =>{
+				this.userStatus = userStatus
+			})
+
+
 	
 
 	}

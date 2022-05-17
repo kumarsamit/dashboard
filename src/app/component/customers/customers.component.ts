@@ -12,7 +12,7 @@ export class CustomersComponent implements OnInit {
     name: any;
     
     constructor(private user: CustomerService, private route: ActivatedRoute) {
-        this.user.getUser().subscribe((data) => {
+        this.user.getData("https://jsonplaceholder.typicode.com/users").subscribe((data) => {
             this.data = data;
 			// console.warn(data)
         });

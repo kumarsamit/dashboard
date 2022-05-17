@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CustomerService } from 'src/app/customer.service';
 import { Router } from '@angular/router';
 
+
 @Injectable({
 	providedIn: 'root'
 })
@@ -20,15 +21,23 @@ export class CustomerDetialsComponent implements OnInit {
 
 	CustomerDetails: any;
 	newApi: string = 'https://jsonplaceholder.typicode.com/users';
+	data: any;
+    name: any;
 
-	constructor( public route: ActivatedRoute ) {
+	constructor( public route: ActivatedRoute , private user: CustomerService  ) {
 		var newURL = this.newApi + '/' + this.route.snapshot.params['id']
 		console.log(newURL)
-		//  this.router.navigateByUrl(newURL);
+
+			this.user.getData(newURL).subscribe((data) => {
+				this.data = data;
+				console.warn(data)
+			});
+	
+
 	}
 
 	ngOnInit(): void {
-
+		
 	}
 
 }

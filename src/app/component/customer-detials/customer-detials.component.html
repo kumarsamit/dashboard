@@ -1,2 +1,50 @@
-<!-- <p>Account ID: {{ id }}</p> -->
-customer detail
+
+<table>
+    <tr>
+		<td>Name</td>
+        <td>{{data.name}}</td>
+    </tr>
+    <tr>
+		<td>username</td>
+        <td>{{data.username}}</td>
+    </tr>
+    <tr>
+		<td>Id</td>
+		<td >{{data.id}}</td>
+    </tr>
+    <tr>
+		<td>Email</td>
+        <td>{{data.email}}</td>
+    </tr>
+    <tr>
+
+		<td>Phone</td>
+		<td>{{data.phone}}</td>
+    </tr>
+    <tr>
+        <td>Website</td>
+        <td>{{data.website}}</td>
+    </tr>
+    <tr>
+		<td>Address</td>
+        <td>{{data.address.suite}}, {{data.address.street}}, {{data.address.city}}, {{data.address.zipcode}} , (lat:{{data.address.geo.lat}}, lng:{{data.address.geo.lng}})</td>
+    </tr>
+</table>
+
+
+
+<h6 class="mt-5 mb-3">Company Details</h6>
+<table>
+    <tr>
+        <td>Company Name</td>
+        <td>{{data.company.name}}</td>
+    </tr>
+    <tr>
+        <td>Catch Phrase</td>
+        <td>{{data.company.catchPhrase}}</td>
+    </tr>
+    <tr>
+        <td>Bs</td>
+        <td>{{data.company.bs}}</td>
+    </tr>
+</table>

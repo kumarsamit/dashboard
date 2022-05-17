@@ -17,7 +17,7 @@ export class StatsComponent implements OnInit {
   //   })
   // }
   getUserValue(value: any){
-    console.warn(value)
+    console.log(value)
   }
   ngOnInit(): void {
   }

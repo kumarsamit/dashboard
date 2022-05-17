@@ -11,7 +11,7 @@ export class IssuesComponent implements OnInit {
 
   data:any;
   constructor( private user:CustomerService){
-    this.user.getData().subscribe(data=>{
+    this.user.getData("https://jsonplaceholder.typicode.com/todos/").subscribe(data=>{
       // console.warn(data)
       this.data = data 
     })

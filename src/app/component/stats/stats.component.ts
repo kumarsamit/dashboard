@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-stats',
   templateUrl: './stats.component.html',
@@ -15,7 +16,9 @@ export class StatsComponent implements OnInit {
   //     this.data = data 
   //   })
   // }
-
+  getUserValue(value: any){
+    console.warn(value)
+  }
   ngOnInit(): void {
   }
 

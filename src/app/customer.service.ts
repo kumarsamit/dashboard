@@ -23,10 +23,11 @@ export class CustomerService {
     let url = "https://jsonplaceholder.typicode.com/users";
     return this.http.get(url)
   }
-  getCustomer(){
-    let url = "https://jsonplaceholder.typicode.com/users" + '/' + 'newURLId'
+  
+  // getCustomer(){
+  //   let url = "https://jsonplaceholder.typicode.com/users" + '/' + 'newURLId'
 
-  }
+  // }
 
 
 

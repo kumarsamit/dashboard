@@ -15,6 +15,7 @@ import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { ErrorComponent } from './component/error/error.component';
 import { CustomerDetialsComponent } from './component/customer-detials/customer-detials.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -79,6 +80,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
+FormsModule,
 		RouterModule.forRoot(routes),
 
   ],

@@ -12,7 +12,7 @@ export class IssuesComponent implements OnInit {
   data:any;
   constructor( private user:CustomerService){
     this.user.getData().subscribe(data=>{
-      console.warn(data)
+      // console.warn(data)
       this.data = data 
     })
   }

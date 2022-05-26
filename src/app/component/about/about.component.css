@@ -1,0 +1,9 @@
+:host ::ng-deep .bshadow img{
+    width: 180px !important;
+    margin: 0 10px 10px;
+}
+
+textarea{
+    width: 200px;
+    margin:auto;
+} 

@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
 import { ErrorComponent } from './component/error/error.component';
 import { CustomerDetialsComponent } from './component/customer-detials/customer-detials.component';
 import { FormsModule } from '@angular/forms';
-
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
 const routes: Routes = [
   {
@@ -80,7 +80,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-FormsModule,
+    FormsModule,
+    NgxQRCodeModule,
 		RouterModule.forRoot(routes),
 
   ],

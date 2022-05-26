@@ -42,8 +42,6 @@ export class CustomerDetialsComponent implements OnInit {
 			})
 
 
-	
-
 	}
 
 	ngOnInit(): void {

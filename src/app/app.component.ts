@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CustomerService } from './customer.service';
+import { Pipe, PipeTransform } from '@angular/core';
 
 
 @Component({

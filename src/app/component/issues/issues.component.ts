@@ -7,6 +7,7 @@ import { CustomerService } from 'src/app/customer.service';
   templateUrl: './issues.component.html',
   styleUrls: ['./issues.component.css']
 })
+
 export class IssuesComponent implements OnInit {
 
   data:any;

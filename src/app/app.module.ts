@@ -17,6 +17,7 @@ import { ErrorComponent } from './component/error/error.component';
 import { CustomerDetialsComponent } from './component/customer-detials/customer-detials.component';
 import { FormsModule } from '@angular/forms';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -83,6 +84,7 @@ const routes: Routes = [
     FormsModule,
     NgxQRCodeModule,
 		RouterModule.forRoot(routes),
+		NoopAnimationsModule,
 
   ],
   providers: [],

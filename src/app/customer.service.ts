@@ -17,10 +17,4 @@ export class CustomerService {
     return this.http.get(url)
   };
 
-  
-
-
-
-
-
 }

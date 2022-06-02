@@ -1,0 +1,113 @@
+<div class="d-flex justify-content-end border-bottom border-secondary pb-2">
+    <a
+        class="btn btn-success mx-2"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        (click)="clickAdd()"
+        >Add Employee</a
+    >
+</div>
+<!-- table -->
+
+<table class="table  table-success table-striped">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Contat No</td>
+            <td>Salary</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let row of employeeData">
+            <td>{{row.id}}</td>
+           <td>{{row.name}}</td>
+           <td>{{row.email}}</td>
+           <td>{{row.contact}}</td>
+           <td>{{row.salary}}</td>
+            <td>
+                <a data-bs-toggle="modal"
+                data-bs-target="#exampleModal" (click)="onEdit(row)" class="btn btn-primary btn-sm">Edit</a>
+                <a (click)="deleteEmploye(row)" class="btn btn-danger btn-sm mx-2">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"  *ngIf="showAdd" id="exampleModalLabel">Add Employee Details</h5>
+                <h5 class="modal-title" *ngIf="showEdit" id="exampleModalLabel">Edit Employee Details</h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formvalue">
+                    <div class="form-group">
+                        <input formControlName="name"
+                            class="form-control mb-3"
+                            type="text"
+                            placeholder="Name"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            formControlName="email"
+                            class="form-control mb-3"
+                            type="email"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            formControlName="contact"
+                            class="form-control mb-3"
+                            type="tel"
+                            placeholder="Contact No."
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input
+                            formControlName="salary"                                  
+                            class="form-control"
+                            type="number"
+                            placeholder="Salary"
+                        />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                    id="cancel"
+
+                >
+                    Close
+                </button>
+                <button *ngIf="showAdd" (click)="postEmployeeDetails()" type="button" class="btn btn-primary">
+                    Save 
+                </button>
+                <button *ngIf="showEdit"  (click)="updateEmployeDetails()" type="button" class="btn btn-primary">
+                    Update
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

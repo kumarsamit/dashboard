@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 10,
+      "name": "Ken",
+      "email": "Ken@gmail.com11",
+      "contact": "4512788956",
+      "salary": 45000
+    },
+    {
+      "id": 12,
+      "name": "Ken3343",
+      "email": "Ken@gmail.com",
+      "contact": "4512788956w",
+      "salary": 45000
+    },
+    {
+      "id": 13,
+      "name": "text",
+      "email": "test@gmail.com",
+      "contact": "7845895612",
+      "salary": 780000
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

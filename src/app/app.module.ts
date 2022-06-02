@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
@@ -15,82 +15,89 @@ import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { ErrorComponent } from './component/error/error.component';
 import { CustomerDetialsComponent } from './component/customer-detials/customer-detials.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
-import {MatButtonModule} from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { EmployeeComponent } from './component/employee/employee.component'
 
 
 
 const routes: Routes = [
-  {
-    path:'',
-    loadChildren:()=> import('./component/home/home.module').then((m)=>m.HomeModule)
-  },
-  {
-    path:'home',
-    loadChildren:()=> import('./component/home/home.module').then((m)=>m.HomeModule)
-  },
+	{
+		path: '',
+		loadChildren: () => import('./component/home/home.module').then((m) => m.HomeModule)
+	},
+	{
+		path: 'home',
+		loadChildren: () => import('./component/home/home.module').then((m) => m.HomeModule)
+	},
 	{
 		path: 'customers',
-    loadChildren: () => import('./component/customers/customers.module').then((m)=> m.CustomersModule)
+		loadChildren: () => import('./component/customers/customers.module').then((m) => m.CustomersModule)
 	},
-  {
+	{
+		path:'employee',
+		loadChildren:() => import('./component/employee/employee.module').then((m) => m.EmployeeModule)
+	},
+	{
 		path: 'customers/:id',
-    loadChildren: () => import('./component/customer-detials/customer-detials.module').then((m)=> m.CustomerDetialsModule)
+		loadChildren: () => import('./component/customer-detials/customer-detials.module').then((m) => m.CustomerDetialsModule)
 	},
-  {
+	{
 		path: 'performance',
-    loadChildren: () => import('./component/performance/performance.module').then((m)=>m.PerformanceModule)
+		loadChildren: () => import('./component/performance/performance.module').then((m) => m.PerformanceModule)
 	},
-  {
-    path:'issues',
-    loadChildren:()=>import('./component/issues/issues.module').then((m)=>m.IssuesModule)
-  },
-  {
-    path:'stats',
-    loadChildren:() => import('./component/stats/stats.module').then((m)=>m.StatsModule)
-  },
-  {
-    path:'about',
-    loadChildren:()=>import('./component/about/about.module').then((m)=>m.AboutModule)
-  },
-  {
-    path:'terms',
-    loadChildren:()=>import('./component/terms/terms.module').then((m)=> m.TermsModule)
-  },
+	{
+		path: 'issues',
+		loadChildren: () => import('./component/issues/issues.module').then((m) => m.IssuesModule)
+	},
+	{
+		path: 'stats',
+		loadChildren: () => import('./component/stats/stats.module').then((m) => m.StatsModule)
+	},
+	{
+		path: 'about',
+		loadChildren: () => import('./component/about/about.module').then((m) => m.AboutModule)
+	},
+	{
+		path: 'terms',
+		loadChildren: () => import('./component/terms/terms.module').then((m) => m.TermsModule)
+	},
 	{
 		path: '**',
-    loadChildren: () => import('./component/error/error.module').then((m)=>m.ErrorModule)
+		loadChildren: () => import('./component/error/error.module').then((m) => m.ErrorModule)
 	}
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    SidebarComponent,
-    FooterComponent,
-    CustomersComponent,
-    PerformanceComponent,
-    IssuesComponent,
-    StatsComponent,
-    AboutComponent,
-    TermsComponent,
-    ErrorComponent,
-    CustomerDetialsComponent,
-    
-  ],
-  imports: [
-    MatButtonModule,
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    NgxQRCodeModule,
-		RouterModule.forRoot(routes),
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		SidebarComponent,
+		FooterComponent,
+		CustomersComponent,
+		PerformanceComponent,
+		IssuesComponent,
+		StatsComponent,
+		AboutComponent,
+		TermsComponent,
+		ErrorComponent,
+		CustomerDetialsComponent,
+  EmployeeComponent,
 
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	],
+	imports: [
+		MatButtonModule,
+		BrowserModule,
+		HttpClientModule,
+		FormsModule,
+		NgxQRCodeModule,
+		ReactiveFormsModule,
+		RouterModule.forRoot(routes),
+	],
+
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
 

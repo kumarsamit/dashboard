@@ -68,17 +68,20 @@ export class EmployeeComponent implements OnInit {
   onEdit(row:any){
     this.showAdd = false;
     this.showEdit = true;
+    this.employeeModalObj.id = row.id;
     this.formvalue.controls['name'].setValue(row.name);
     this.formvalue.controls['email'].setValue(row.email);
     this.formvalue.controls['contact'].setValue(row.contact);
     this.formvalue.controls['salary'].setValue(row.salary);
 
   }
+
   updateEmployeDetails(){
     this.employeeModalObj.name = this.formvalue.value.name;
     this.employeeModalObj.contact = this.formvalue.value.contact;
     this.employeeModalObj.email = this.formvalue.value.email;
     this.employeeModalObj.salary = this.formvalue.value.salary;
+
 
   this.api.updateEmploye(this.employeeModalObj, this.employeeModalObj.id)
   .subscribe(res =>{
@@ -89,6 +92,7 @@ export class EmployeeComponent implements OnInit {
       this.getAllEmployee();
 
   })
+  
   }
 
 }

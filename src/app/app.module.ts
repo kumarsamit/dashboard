@@ -18,7 +18,7 @@ import { CustomerDetialsComponent } from './component/customer-detials/customer-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { MatButtonModule } from '@angular/material/button';
-import { EmployeeComponent } from './component/employee/employee.component'
+import { EmployeeComponent } from './component/employee/employee.component';
 
 
 
@@ -83,7 +83,7 @@ const routes: Routes = [
 		TermsComponent,
 		ErrorComponent,
 		CustomerDetialsComponent,
-  EmployeeComponent,
+  	EmployeeComponent,
 
 	],
 	imports: [

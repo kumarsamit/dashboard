@@ -1,9 +1,90 @@
-<table>
-    <tr *ngFor="let data of homelist">
-        <td>{{data.albumId}}</td>
-        <td>{{data.id}}</td>
-        <td>{{data.title}}</td>
-        <td>{{data.url}}</td>
-        <td><img  src="{{data.thumbnailUrl}}" alt=""></td>
-    </tr>
-</table>
+<div class="container">
+    <div class="card-list">
+        <div class="row">
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-info">Employee</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a routerLink="/employee" class="card-link btn btn-info">Click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-warning">Customers</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a  routerLink="/customers"  class="card-link btn btn-warning">Click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-danger">Stats</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a  routerLink="/stats"class="card-link btn btn-danger">Click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-secondary">Complaints</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a  routerLink="/issues"class="card-link btn btn-secondary">Click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-primary">About</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a  routerLink="/about"class="card-link btn btn-primary">Click here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 c0l-sm-3">
+                <div  class="card">
+                    <h5 class="card-title bg-success">Terms & Conditions</h5>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam doloribus illo vero.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a  routerLink="/terms"class="card-link btn btn-success">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

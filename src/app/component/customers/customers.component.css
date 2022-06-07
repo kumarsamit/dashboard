@@ -2,3 +2,6 @@
 tbody tr{
     cursor: pointer;
 }
+td{
+    padding: 10px;
+}

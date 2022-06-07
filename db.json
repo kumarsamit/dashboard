@@ -2,76 +2,87 @@
   "posts": [
     {
       "id": 1,
-      "name": "Moriah",
-      "email": "moriah@gmail.com",
-      "contact": "786567854",
-      "salary": 21450
+      "name": "Shanna",
+      "email": "Shanna@melissa.tv",
+      "contact": "5698784522",
+      "salary": 563254
     },
     {
       "id": 2,
-      "name": "Jaeden",
-      "email": "Jaeden.Towne@arlene.tv",
-      "contact": "816567854",
-      "salary": 321450
+      "name": "Lucio Hettinge",
+      "email": "Lucio_Hettinger@annie.ca",
+      "contact": "5654988754",
+      "salary": 562354
     },
     {
       "id": 3,
-      "name": "Ken",
-      "email": "ken@gmail.com",
-      "contact": "55645875412",
-      "salary": 564587
+      "name": "Oswald",
+      "email": "Oswald.Vandervort@leanne.org",
+      "contact": "5687452354",
+      "salary": 564512
     },
     {
       "id": 4,
-      "name": "Ervin",
-      "email": "ervin@gmail.com",
-      "contact": "54879856",
-      "salary": 5613215
+      "name": "Vincenza",
+      "email": "Vincenza_Klocko@albertha.name",
+      "contact": "569887451",
+      "salary": 564512
     },
     {
       "id": 5,
-      "name": "Glenna",
-      "email": "glenna@yahoo.com",
-      "contact": "56875456987",
-      "salary": 565487
+      "name": "Mariana",
+      "email": "Mariana_Orn@preston.org",
+      "contact": "56548754132",
+      "salary": 325654
     },
     {
       "id": 6,
-      "name": "Delphine",
-      "email": "delphine@hotmail.com",
-      "contact": "5487545698",
-      "salary": 569875
+      "name": "Sophia",
+      "email": "Sophia@arianna.co.uk",
+      "contact": "565412326",
+      "salary": 125487
     },
     {
       "id": 7,
-      "name": "Meghan",
-      "email": "meghan@little.com",
-      "contact": "56787545",
-      "salary": 56871
+      "name": "Russe",
+      "email": "Russel.Parker@kameron.io",
+      "contact": "5654875432",
+      "salary": 563254
     },
     {
       "id": 8,
-      "name": "Christine",
-      "email": "Christine@ayana.info",
-      "contact": "8754325698",
-      "salary": 988754
+      "name": "Jennings",
+      "email": "Jennings_Pouros@erica.biz",
+      "contact": "568754122",
+      "salary": 569856
     },
     {
       "id": 9,
-      "name": "Mariana",
-      "email": "Mariana_Orn@preston.org",
-      "contact": "98458756",
-      "salary": 875684
+      "name": "Piper",
+      "email": "Piper@linwood.us",
+      "contact": "5687541232",
+      "salary": 565412
     },
     {
       "id": 10,
-      "name": "Jeffery",
-      "email": "Jeffery@juwan.us",
-      "contact": "9878456874",
-      "salary": 568754
+      "name": "Jeremy",
+      "email": "Jeremy.Harann@waino.me",
+      "contact": "5645873256",
+      "salary": 569856
     }
   ],
-  "comments": [],
+  "comments": [
+    {
+      "id": 1,
+      "heading": "Component",
+      "desc": " These are the basic building blocks of angular application to control HTML views."
+    },
+    {
+      "id": 2,
+      "heading": "Module",
+      "desc": " An angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task."
+    }
+  ],
   "profile": {
     "name": "typicode"
   }

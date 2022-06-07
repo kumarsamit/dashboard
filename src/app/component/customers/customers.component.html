@@ -10,7 +10,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr  routerLink="/customers/{{item.id}}" *ngFor="let item of data">
+		<tr  routerLink="/customers/{{item.id}}" *ngFor="let item of data" title="click here to view details">
 			<td >{{item.id}}</td>
 			<td>{{item.name}}</td>
 			<td>{{item.username}}</td>

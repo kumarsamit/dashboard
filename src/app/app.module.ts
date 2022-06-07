@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { MatButtonModule } from '@angular/material/button';
 import { EmployeeComponent } from './component/employee/employee.component';
+import { TodoListComponent } from './component/todo-list/todo-list.component';
 
 
 
@@ -30,6 +31,10 @@ const routes: Routes = [
 	{
 		path: 'home',
 		loadChildren: () => import('./component/home/home.module').then((m) => m.HomeModule)
+	},
+	{
+		path:'to-do-list',
+		loadChildren: () => import('./component/todo-list/todo-list.module').then((m) => m.TodoListModule)
 	},
 	{
 		path: 'customers',
@@ -84,6 +89,7 @@ const routes: Routes = [
 		ErrorComponent,
 		CustomerDetialsComponent,
   	EmployeeComponent,
+   TodoListComponent,
 
 	],
 	imports: [

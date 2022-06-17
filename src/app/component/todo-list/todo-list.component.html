@@ -10,9 +10,10 @@
 
 <div class="container">
     <div class="row">
+        {{bgColor}}
         <div *ngFor="let item of todoData" class="col-sm-12">
             <div 
-                [ngClass]="bgColor == true ? 'greenColor' : 'redColor' " 
+                [ngClass]="{'greenColor':bgColor==item.id}"
                 class="d-flex card mt-3 rounded border border-dark bg-secondary bg-gradient"
             >
                 <div class="card-header d-flex  justify-content-between">
@@ -22,7 +23,7 @@
                     </div>
                     <div class="action-btn d-flex">
 
-                        <a (click)="getbgColor()"><img
+                        <a (click)="getbgColor(item.id)"><img
                             src="/assets/img/square-check-solid.svg"
                             alt=""
                     /></a>

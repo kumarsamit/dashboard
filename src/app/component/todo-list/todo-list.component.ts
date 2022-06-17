@@ -18,15 +18,10 @@ export class TodoListComponent implements OnInit {
 	todoData!: any;
 	showAdd!: boolean;
 	showEdit!: boolean;
-	bgColor:boolean= false;
+	bgColor:any="";
 
-	getbgColor(){
-		if (this.bgColor == true) {
-			this.bgColor = false;
-		}
-		else {
-			this.bgColor = true;
-		}
+	getbgColor(id:any){
+		this.bgColor = id;
 	}
 
 

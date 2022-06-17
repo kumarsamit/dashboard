@@ -61,5 +61,10 @@ export class CustomerService {
       return res
     }))
   }
+  SignupList(data:any){
+    return this.http.post<any>("http://localhost:3000/profile",data).pipe(map((res:any) => {
+      return res
+    }))
+  }
 
 }

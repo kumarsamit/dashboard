@@ -18,6 +18,16 @@ export class TodoListComponent implements OnInit {
 	todoData!: any;
 	showAdd!: boolean;
 	showEdit!: boolean;
+	bgColor:boolean= false;
+
+	getbgColor(){
+		if (this.bgColor == true) {
+			this.bgColor = false;
+		}
+		else {
+			this.bgColor = true;
+		}
+	}
 
 
   ngOnInit(): void {

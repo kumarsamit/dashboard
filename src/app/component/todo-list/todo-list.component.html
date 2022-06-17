@@ -11,7 +11,8 @@
 <div class="container">
     <div class="row">
         <div *ngFor="let item of todoData" class="col-sm-12">
-            <div
+            <div 
+                [ngClass]="bgColor == true ? 'greenColor' : 'redColor' " 
                 class="d-flex card mt-3 rounded border border-dark bg-secondary bg-gradient"
             >
                 <div class="card-header d-flex  justify-content-between">
@@ -20,19 +21,25 @@
                         <h5 class="fs-5 mx-2 card-title">{{ item.heading }}</h5>
                     </div>
                     <div class="action-btn d-flex">
+
+                        <a (click)="getbgColor()"><img
+                            src="/assets/img/square-check-solid.svg"
+                            alt=""
+                    /></a>
+
                         <a
                             (click)="onEdit(item)"
-                            
+                            class="mx-3"
                             data-bs-toggle="modal"
                             data-bs-target="#taskModal"
                         >
                             <img
-                                src="/assets/img/pen-to-square-solid.svg"
+                                src="/assets/img/square-pen-solid.svg"
                                 alt=""
                         /></a>
                         <a
                             (click)="deleteToDo(item)"
-                            class=" mx-3"
+                            class=" mx-1"
                             > <img
                             src="/assets/img/trash-can-solid.svg"
                             alt=""

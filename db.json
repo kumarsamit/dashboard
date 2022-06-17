@@ -69,21 +69,76 @@
       "email": "Jeremy.Harann@waino.me",
       "contact": "5645873256",
       "salary": 569856
+    },
+    {
+      "id": 11,
+      "name": "Kariane",
+      "email": "Kariane@jadyn.tv",
+      "contact": "5654879856",
+      "salary": 875456
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "heading": "Component",
-      "desc": " These are the basic building blocks of angular application to control HTML views."
-    },
-    {
       "id": 2,
       "heading": "Module",
       "desc": " An angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task."
+    },
+    {
+      "id": 3,
+      "heading": "Directives",
+      "desc": "An angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task.\nAn angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task.\nAn angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task.\nAn angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task.\nAn angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task.\nAn angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as \"module\" which perform a single task."
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "name": "test",
+      "email": "test@test.com",
+      "contact": "1234567895",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "test",
+      "email": "test1@test.com",
+      "contact": "5487541254",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "email": "test2@test.com",
+      "contact": "5487541254",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "test",
+      "email": "test3@test.com",
+      "contact": "5487541254",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "test",
+      "email": "test4@test.com",
+      "contact": "5487541254",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "test",
+      "email": "test5@test.com",
+      "contact": "5487541254",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "test",
+      "email": "test7@test.com",
+      "contact": "5487953232",
+      "password": "1234",
+      "id": 7
+    }
+  ]
 }

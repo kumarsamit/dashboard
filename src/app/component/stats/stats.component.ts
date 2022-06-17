@@ -9,13 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  // data:any;
-  // constructor( private user:CustomerService){
-  //   this.user.getUser().subscribe(data=>{
-  //     console.warn(data)
-  //     this.data = data 
-  //   })
-  // }
+
   getUserValue(value: any){
     console.log(value)
   }

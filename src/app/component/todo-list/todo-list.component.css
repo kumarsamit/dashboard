@@ -1,4 +1,8 @@
 .action-btn img{
     width: 15px;
     cursor: pointer;
+    opacity: .8;
+}
+.greenColor{
+    background: rgb(43, 107, 43) !important;
 }

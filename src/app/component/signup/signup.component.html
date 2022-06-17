@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center align-items-center h-100">
+    <form class="p-3 rounded" [formGroup]="registerUserForm" >
+        <div class="mb-3">
+            <h2  class="text-center fs-3">Signup Form</h2>
+        </div>
+        <div class="mb-3">
+            <label for="InputformControlName" class="form-label">Full Name</label>
+            <input type="text"  formControlName="Name" required class="form-control" id="InputformControlName">
+        </div>
+        <div class="mb-3">
+            <label for="InputPh" class="form-label">Contact No.</label>
+            <input type="tel"  formControlName="Contact" required class="form-control" id="InputPh">
+        </div>
+        <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email address</label>
+            <input type="email"  formControlName="Email" required class="form-control" id="InputEmail">
+        </div>
+        <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input type="password"  formControlName="Password" required class="form-control" id="InputPassword">
+        </div>
+        <button type="submit" class="btn btn-primary w-100" (click)="registerUser()">Register</button>
+        <div class="mt-2 loginbtn">
+            Click here to <a routerLink="/login">Login</a>
+        </div>
+    </form>
+</div>

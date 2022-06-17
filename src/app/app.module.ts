@@ -20,6 +20,8 @@ import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { MatButtonModule } from '@angular/material/button';
 import { EmployeeComponent } from './component/employee/employee.component';
 import { TodoListComponent } from './component/todo-list/todo-list.component';
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 
 
 
@@ -27,6 +29,14 @@ const routes: Routes = [
 	{
 		path: '',
 		loadChildren: () => import('./component/home/home.module').then((m) => m.HomeModule)
+	},
+	{
+		path:'signup',
+		loadChildren: () => import('./component/signup/signup.module').then((m) => m.SignupModule) 
+	},
+	{
+		path:'login',
+		loadChildren: () => import('./component/login/login.module').then((m) => m.LoginModule)
 	},
 	{
 		path: 'home',
@@ -90,6 +100,8 @@ const routes: Routes = [
 		CustomerDetialsComponent,
   	EmployeeComponent,
    TodoListComponent,
+   LoginComponent,
+   SignupComponent,
 
 	],
 	imports: [

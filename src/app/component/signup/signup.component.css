@@ -1,0 +1,16 @@
+form{
+    width: 400px;
+    max-width: 100%;
+    box-shadow: 10px 10px 40px #999;
+    transition: .5s;
+}
+form:hover{
+    box-shadow: 15px 15px 60px #666;
+
+}
+
+.loginbtn a{
+    text-decoration: underline;
+    color: dodgerblue;
+    cursor: pointer;
+}
